@@ -44,7 +44,7 @@
             <li class="nav-item">
               <a class="nav-link" href="#timeline">Timeline</a>
             </li>
-            
+
             <li class="nav-item">
               <a class="nav-link" href="#contact">Contact</a>
             </li>
@@ -90,7 +90,16 @@
                 <p class="text-secondary fs-7 exp">Happy Clients</p>
               </div>
             </div>
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            >
+              Buka Modal
+            </button>
           </div>
+
           <div class="col-md-5">
             <img
               src="img/profile.png"
@@ -314,12 +323,50 @@
                 rows="3"
                 class="form-control rounded-0 mb-3"
               ></textarea>
-              <button class="btn btn-orange w-100 rounded-3 p-2 mt-2">Submit</button>
+              <button class="btn btn-orange w-100 rounded-3 p-2 mt-2">
+                Submit
+              </button>
             </form>
           </div>
         </div>
       </div>
     </section>
+
+    <!-- modal -->
+
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Judul Modal</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Tutup"
+            ></button>
+          </div>
+          <div class="modal-body">Isi konten modal di sini...</div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Tutup
+            </button>
+            <button type="button" class="btn btn-primary">Simpan</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end modal -->
   </body>
   <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
   <script>
@@ -352,6 +399,12 @@
           spaceBetween: 50,
         },
       },
+    });
+    const myModal = new bootstrap.Modal(
+      document.getElementById("exampleModal")
+    );
+    document.getElementById("openModalBtn").addEventListener("click", () => {
+      myModal.show();
     });
   </script>
   <script src="vendors/boostrap/js/bootstrap.bundle.min.js"></script>
