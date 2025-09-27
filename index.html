@@ -9,12 +9,16 @@
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="style/style.css" />
   </head>
   <body>
     <nav class="navbar navbar-expand-lg bg-white">
-      <div class="container">
-        <a class="navbar-brand fw-bold" href="#">Irfan</a>
+      <div class="container p-4">
+        <a class="navbar-brand fw-bold fs-2" href="#">IrfanFauzi</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -32,19 +36,17 @@
               <a class="nav-link active" aria-current="page" href="#">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Portfolio</a>
+              <a class="nav-link" href="#portfolio">Portfolio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Skills</a>
+              <a class="nav-link" href="#skills">Skills</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Timeline</a>
+              <a class="nav-link" href="#timeline">Timeline</a>
             </li>
+            
             <li class="nav-item">
-              <a class="nav-link" href="#">News</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
+              <a class="nav-link" href="#contact">Contact</a>
             </li>
           </ul>
         </div>
@@ -54,7 +56,7 @@
     <!-- Hero -->
     <section class="header-section" id="header">
       <div class="container">
-        <div class="row align-items-center">
+        <div class="row align-items-center justify-content-between">
           <div class="col-md-6">
             <p class="text-orange fw-semibold fs-3">Irfan Fauzi</p>
             <h1 class="header-title text-uppercase fw-bold mb-5">
@@ -79,15 +81,278 @@
               ></a>
             </div>
             <div class="d-flex align-items-center gap-4 mt-5">
-              <div class="d-flex align-items-center gap-2 ">
+              <div class="d-flex align-items-center gap-2">
                 <p class="header-skill fw-bold fs-1">10+</p>
                 <p class="text-secondary fs-7 exp">Years of experience</p>
               </div>
+              <div class="d-flex align-items-center gap-2">
+                <p class="header-skill fw-bold fs-1">30+</p>
+                <p class="text-secondary fs-7 exp">Happy Clients</p>
+              </div>
             </div>
+          </div>
+          <div class="col-md-5">
+            <img
+              src="img/profile.png"
+              alt="foto profile"
+              class="header-img img-fluid"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- portfolio -->
+    <section class="portfolio-section" id="portfolio">
+      <div class="container">
+        <p class="text-orange">Portfolio</p>
+        <h2 class="section-title mb-5">select works</h2>
+      </div>
+      <div class="container">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="card">
+                <div class="card-body">
+                  <img
+                    src="img/portfolio-1.jpg"
+                    alt=""
+                    class="card-img portfolio-img img-fluid"
+                  />
+                  <h6 class="fw-semibold mt-3">Pomodoro timer app UI</h6>
+                  <a href="#" class="text-orange">Detail Portfolio</a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card">
+                <div class="card-body">
+                  <img
+                    src="img/portfolio-2.jpg"
+                    alt=""
+                    class="card-img portfolio-img img-fluid"
+                  />
+                  <h6 class="fw-semibold mt-3">Ride Share Application</h6>
+                  <a href="#" class="text-orange">Detail Portfolio</a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card">
+                <div class="card-body">
+                  <img
+                    src="img/portfolio-6.png"
+                    alt=""
+                    class="card-img portfolio-img img-fluid"
+                  />
+                  <h6 class="fw-semibold mt-3">Ride Share Application</h6>
+                  <a href="#" class="text-orange">Detail Portfolio</a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card">
+                <div class="card-body">
+                  <img
+                    src="img/portfolio-4.jpg"
+                    alt=""
+                    class="card-img portfolio-img img-fluid"
+                  />
+                  <h6 class="fw-semibold mt-3">Ride Share Application</h6>
+                  <a href="#" class="text-orange">Detail Portfolio</a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card">
+                <div class="card-body">
+                  <img
+                    src="img/portfolio-3.jpg"
+                    alt=""
+                    class="card-img portfolio-img img-fluid"
+                  />
+                  <h6 class="fw-semibold mt-3">Ride Share Application</h6>
+                  <a href="#" class="text-orange">Detail Portfolio</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination mt-5 -top-100"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="skill-section" id="skills">
+      <div class="container">
+        <div class="row align-items-center justify-content-lg-between gap-5">
+          <div class="col-md-6">
+            <p class="text-orange fw-semibold">Skills</p>
+            <h2 class="section-title text-white mb-5">Programming skills</h2>
+            <div class="mb-3">
+              <div
+                class="d-flex align-items-center justify-content-between mb-2"
+              >
+                <p class="text-white text-uppercase fw-semibold mb-0">
+                  javascript
+                </p>
+                <p class="text-white text-uppercase mb-0">intermediete</p>
+              </div>
+              <div class="progress-bar">
+                <span class="progress" style="width: 90%"></span>
+              </div>
+            </div>
+            <div class="mb-3">
+              <div
+                class="d-flex align-items-center justify-content-between mb-2"
+              >
+                <p class="text-white text-uppercase fw-semibold mb-0">
+                  ReactJS
+                </p>
+                <p class="text-white text-uppercase mb-0">intermediete</p>
+              </div>
+              <div class="progress-bar">
+                <span class="progress" style="width: 90%"></span>
+              </div>
+            </div>
+            <div class="mb-3">
+              <div
+                class="d-flex align-items-center justify-content-between mb-2"
+              >
+                <p class="text-white text-uppercase fw-semibold mb-0">Figma</p>
+                <p class="text-white text-uppercase mb-0">Profesional</p>
+              </div>
+              <div class="progress-bar">
+                <span class="progress" style="width: 100%"></span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-5">
+            <img
+              src="img/skill-photo.png"
+              alt="foto profile"
+              class="skill-img img-fluid"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- working period -->
+    <section class="timeline-section" id="timeline">
+      <div class="container">
+        <p class="text-orange">Timeline</p>
+        <h2 class="section-title mb-5">Working period</h2>
+
+        <div class="row py-3 border-bottom">
+          <div class="col-md-4">April, 2025 - Today</div>
+          <div class="col-md-4">Head engineer, Co Founder</div>
+          <div class="col-md-4">Irfan studio</div>
+        </div>
+        <div class="row py-3 border-bottom">
+          <div class="col-md-4">Januari, 2021 - December 2024</div>
+          <div class="col-md-4">Senior Frontend Engineer</div>
+          <div class="col-md-4">Malaka Project</div>
+        </div>
+        <div class="row py-3 border-bottom">
+          <div class="col-md-4">April, 2019 - December 2021</div>
+          <div class="col-md-4">Junior Front end Engineer</div>
+          <div class="col-md-4">ISundaneer.com</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- COntact -->
+    <section class="contact" id="contact">
+      <div class="container">
+        <div class="row align-items-center justify-content-between">
+          <div class="col-md-6">
+            <p class="text-orange">Contact</p>
+            <h2 class="section-title mb-5">get in touch</h2>
+            <p class="text-secondary mb-3">
+              please fill out the form or call me between 09.00 a.am and 8:00
+              pm, Monday Throught Friday
+            </p>
+            <div class="d-flex align-items-center gap-2 mb-3">
+              <i class="bx bx-map-pin text-orange fs-5"></i>
+              <div class="mb-0">9812 irfan fauzi, majalengka, jawa barat</div>
+            </div>
+            <div class="d-flex align-items-center gap-2 mb-3">
+              <i class="bx bx-phone-call text-orange fs-5"></i>
+              <div class="mb-0">862-0892-0023</div>
+            </div>
+            <div class="d-flex align-items-center gap-2 mb-3">
+              <i class="bx bx-envelope text-orange fs-5"></i>
+              <div class="mb-0">irfanfauzi24@yahoo.com</div>
+            </div>
+            <div class="d-flex align-items-center gap-2 mb-3">
+              <i class="bx bx-globe text-orange fs-5"></i>
+              <div class="mb-0">www.irfan-fauzi.id</div>
+            </div>
+          </div>
+          <div class="col-md-5">
+            <form action="#">
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="input your name"
+                class="form-control rounded-0 mb-2"
+              />
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="input your email"
+                class="form-control rounded-0 mb-2"
+              />
+              <textarea
+                name="body"
+                id="body"
+                placeholder="message"
+                cols="30"
+                rows="3"
+                class="form-control rounded-0 mb-3"
+              ></textarea>
+              <button class="btn btn-orange w-100 rounded-3 p-2 mt-2">Submit</button>
+            </form>
           </div>
         </div>
       </div>
     </section>
   </body>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper(".mySwiper", {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      breakpoints: {
+        340: {
+          slidesPerView: 1,
+          spaceBetween: 20,
+        },
+        540: {
+          slidesPerView: 1,
+          spaceBetween: 20,
+        },
+        640: {
+          slidesPerView: 1,
+          spaceBetween: 20,
+        },
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 40,
+        },
+        1024: {
+          slidesPerView: 3,
+          spaceBetween: 50,
+        },
+      },
+    });
+  </script>
   <script src="vendors/boostrap/js/bootstrap.bundle.min.js"></script>
 </html>
